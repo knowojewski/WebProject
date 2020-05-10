@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -15,15 +16,6 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-}
-
-.clearfix {zoom: 1}
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
 }
 
 /* --------------------------------------------- */
@@ -135,6 +127,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
     transition: background-color 0.5s, border 0.5s, color 0.5s;
 
 }
@@ -170,6 +163,7 @@ input[type=submit]:active {
 
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(images/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -182,6 +176,7 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -192,6 +187,16 @@ header {
     margin-top: 20px;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* --- Main nav --- */
 .main-nav {
     float: right;
     list-style: none;
@@ -211,6 +216,7 @@ header {
     text-transform: lowercase;
     font-size: 90%;
     border-bottom: 2px solid rgba(255, 255, 255, 0);
+    -webkit-transition: border-bottom 0.5s;
     transition: border-bottom 0.5s;
 }
 
@@ -223,6 +229,31 @@ header {
     border-bottom: 2px solid #cf6d17;
 }
 
+/* --- Sticky nav --- */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #ebebeb;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 20px;
+
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 17px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 
 /* --------------------------------------------- */
@@ -234,18 +265,19 @@ header {
         margin-bottom: 30px;
 }
 
-
 /* --------------------------------------------- */
 /* MEALS SHOWCASE */
 /* --------------------------------------------- */
 
 .section-meals {
     padding: 0;
+
 }
 
 .meals-showcase {
     list-style: none;
     width: 100%;
+    display: flow-root;
 }
 
 .meals-showcase li {
@@ -265,12 +297,17 @@ header {
     opacity: 70%;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
     transition: transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
 }
 
 .meal-photo img:hover {
     opacity: 100%;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -284,10 +321,13 @@ header {
     background-color: #f4f4f4;
 }
 
+.steps-box {
+    margin-top: 30px;
+}
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
-    margin-top: 30px;
 }
 
 .steps-box:last-child {
@@ -345,6 +385,7 @@ header {
     color: #cf6d17;
     text-decoration: none;
     border-bottom: 1px solid #cf6d17;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 
 }
@@ -370,6 +411,7 @@ header {
 
 
 .section-customers {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(images/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/back-customers.jpg);
     background-size: cover;
     color: #fff;
@@ -555,6 +597,7 @@ footer {
     color: #9a9a9a;
     text-decoration: none;
     font-size: 80%;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -574,6 +617,7 @@ footer {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -604,7 +648,21 @@ footer {
 
 
 
+/* --------------------------------------------- */
+/* ANIMATIONS */
+/* --------------------------------------------- */
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+}
+
+.js--wp-1.animate__fadeIn.animate__animated,
+.js--wp-2.animate__fadeInUp.animate__animated,
+.js--wp-3.animate__fadeIn.animate__animated {
+    opacity: 1;
+}
 
 
 

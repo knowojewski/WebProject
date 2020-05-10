@@ -1,0 +1,174 @@
+
+
+
+/* ----- BIG RESOLUTION from 1023px ----- */
+
+@media only screen and (max-width: 1200px) {
+
+        .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .city-icons {
+        width: 18px;
+        margin-right: 0px;
+    }
+
+    .city-info { letter-spacing: -1px; }
+}
+
+/* ----- MEDIUM RESOLUTION from 1023 to 1116px ----- */
+
+@media only screen and (max-width: 1116px) {
+    .plan-box { font-size: 90%; }
+}
+
+/* ----- MEDIUM RESOLUTION from 1023 to 1116px ----- */
+
+@media only screen and (max-width: 935px) {
+    .plan-box { font-size: 85%; }
+}
+
+/* ----- MEDIUM RESOLUTION from 767 to 1023px ----- */
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+
+    .long-copy {
+        width: 86%;
+        margin-left: 7%;
+    }
+
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .how-works { margin-bottom: 40px; }
+    .how-works:last-of-type { margin-bottom: 60px; }
+
+    .app-screen { width: 50%; }
+
+    .btn-app img {
+    height: 49px;
+    width: auto;
+    }
+
+    .city-icons {
+        width: 17px;
+        margin-right: 0px;
+    }
+    .city-info {
+        font-size: 90%;
+        font-weight: 400;
+    }
+
+    .plan-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-form { width: 80%; }
+}
+
+/* ----- MEDIUM RESOLUTION from 767 to 825px ----- */
+
+@media only screen and (max-width: 825px) {
+    .how-works {
+        letter-spacing: -1px;
+    }
+}
+
+/* ----- MEDIUM RESOLUTION from 767 to 783px ----- */
+
+@media only screen and (max-width: 783px) {
+    h4 { font-size: 125%; }
+}
+
+
+
+/* ----- SMALL RESOLUTION from 480 to 767px ----- */
+
+@media only screen and (max-width: 767px) {
+    body { font-size: 17px; }
+    section { padding: 30px 0; }
+
+    .row { padding: 0 4%;}
+    .hero-text-box { padding: 0 4%;}
+
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    h1 { font-size: 200%; }
+    h2 {
+        font-size: 160%;
+        margin-bottom: 20px;
+    }
+    h2:after { margin-top: 15px; }
+
+    .long-copy {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section-features .long-copy { margin-bottom: 10px; }
+
+    .app-screen { width: 40%; }
+
+    .steps-box:first-child {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .how-works div {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 130%;
+        margin-right: 20px;
+    }
+    .section-cities .row .col  {
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    .plan-box {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .footer-nav {; margin: 30px 0 0 0; }
+
+    .social-links { margin: 0 0 10px 0; }
+
+    .main-nav { display: none; }
+
+}
+
+
+
+
+
+/* ----- SMALL RESOLUTION to 480px ----- */
+
+@media only screen and (max-width: 480px) {
+
+    .section-cities .row .col  {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .plan-box {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .contact-form { width: 90%; }
+}
+
