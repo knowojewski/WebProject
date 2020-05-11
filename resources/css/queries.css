@@ -149,7 +149,42 @@
 
     .main-nav { display: none; }
 
-}
+    .mobile-nav-icon { display: inline-block; }
+
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    .main-nav li {
+        display: block;
+        padding: 5px 0;
+        font-size: 120%;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+        color: #555;
+    }
+
+    .sticky .logo { display: none; }
+    .sticky .logo-black { display: block; }
+    .sticky .mobile-nav-icon { margin-top: 12px;}
+    .sticky .mobile-nav-icon i { color: #555;}
+
+    }
 
 
 
