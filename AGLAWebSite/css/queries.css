@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1200px) {
+    .main-hero {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    html {
+        font-size: 18px;
+    }
+
+    .contact-box {
+        letter-spacing: -1px;;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 480px) {
+    
+}
