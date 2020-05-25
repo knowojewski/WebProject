@@ -3,6 +3,9 @@ let box = document.querySelector('.about-content');
 let services = document.querySelector('.services');
 let contact = document.querySelector('.contact-row');
 let nav = document.querySelector('.navigation');
+let menuIcon = document.querySelector('.nav-hamburger');
+let navList = document.querySelector('.nav-list');
+
 
 // ANIMATIONS
 
@@ -53,8 +56,31 @@ window.onscroll = function() { scrollingNav() };
 function scrollingNav() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         nav.style.height = "70px";
+        menuIcon.style.width = "70px";
     } else {
         nav.style.height = "120px";
+        menuIcon.style.width = "120px";
     }
 }
 
+// MOBILE NAV
+
+menuIcon.addEventListener('click', displayMenu);
+
+function displayMenu() {
+    if (navList.className === 'nav-list') {
+        navList.className += ' mobile';
+    } else {
+        navList.className = 'nav-list';
+    }
+
+    console.log(menuIcon.innerHTML);
+
+    if (menuIcon.innerHTML == '<ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>') {
+        menuIcon.innerHTML = '<ion-icon name="menu" role="img" class="md hydrated" aria-label="menu"></ion-icon>';
+    } else {
+        menuIcon.innerHTML = '<ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>';
+    }
+
+    
+}

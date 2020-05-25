@@ -165,21 +165,22 @@ header {
     height: 120px;
     z-index: 99;
     transition: all 0.3s;
+    align-items: center;
 }
 
 .navigation p {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+    padding-left: 30px;
     margin-right: auto;
 }
 
 .nav-list {
+    height: 100%;
     list-style: none;
     display: flex;
 }
 
 .nav-list li {
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -197,10 +198,17 @@ header {
 }
 
 .nav-list li a:hover,
-.nav-list li a:active {
-    margin-top: 5px;
-    background-color: #ff4949;
+.nav-list li a:active { transform: scale(1.2); }
+
+.nav-hamburger {
+    display: none;
+    height: 100%;
+    font-size: 60px;
+    margin-right: 10px;
+    cursor: pointer;
 }
+
+
 
 
 /* 
@@ -288,13 +296,6 @@ header {
     flex-basis: 45vw;
     opacity: 100%;
 }
-
-/*
-.first-row div img {
-    width: 100%;
-}
-*/
-
 
 
 /* 
