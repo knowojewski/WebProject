@@ -1,0 +1,81 @@
+*, *::after, *::before
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+body
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    background-color: #333333
+
+// NAVIGATION
+
+nav
+    text-transform: uppercase
+
+    a, i
+        color: #ffffff
+        transition: color 0.3s
+
+    i 
+        padding: 10px
+
+    i:hover 
+        color: #039dff
+
+    a:hover 
+        color: #039dff
+
+    .navbar-brand
+        font-weight: bold
+
+    .active
+        color: #039dff
+
+// HOME
+
+.hero-section
+    height: 100vh
+
+    .hero-img
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100%
+        width: 100%
+        color: #ffffff
+        background-image: linear-gradient(#000000b9, #000000d8), url('../img/hero-img-small.jpg')
+        background-position: center
+        background-size: cover
+        text-align: center
+
+        h1
+            padding: 0 10px
+            font-size: 30px
+            margin-bottom: 15px
+        
+        p 
+            font-size: 14px
+            padding: 0 10px
+
+        .fa-sort-down
+            display: none
+            position: absolute
+            bottom: 20px
+            font-size: 30px
+
+
+@media (min-width: 375px)
+    .hero-section
+        .hero-img
+            h1
+                font-size: 36px
+
+            p 
+                font-size: 14px
+    

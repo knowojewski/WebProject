@@ -1,0 +1,103 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333333;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+nav a, nav i {
+  color: #ffffff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+nav i {
+  padding: 10px;
+}
+
+nav i:hover {
+  color: #039dff;
+}
+
+nav a:hover {
+  color: #039dff;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .active {
+  color: #039dff;
+}
+
+.hero-section {
+  height: 100vh;
+}
+
+.hero-section .hero-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000b9), to(#000000d8)), url("../img/hero-img-small.jpg");
+  background-image: linear-gradient(#000000b9, #000000d8), url("../img/hero-img-small.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero-section .hero-img h1 {
+  padding: 0 10px;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.hero-section .hero-img p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.hero-section .hero-img .fa-sort-down {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+}
+
+@media (min-width: 375px) {
+  .hero-section .hero-img h1 {
+    font-size: 36px;
+  }
+  .hero-section .hero-img p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
