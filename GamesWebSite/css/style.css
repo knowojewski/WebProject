@@ -17,6 +17,7 @@ body {
 
 nav {
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav a, nav i {
@@ -45,8 +46,33 @@ nav .active {
   color: #039dff;
 }
 
+.wrapper {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: #039dff;
+  margin: 0 auto 40px auto;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 66px;
+  margin-top: -66px;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
 .hero-section {
   height: 100vh;
+  overflow: hidden;
 }
 
 .hero-section .hero-img {
@@ -71,6 +97,7 @@ nav .active {
   background-image: linear-gradient(#000000b9, #000000d8), url("../img/hero-img-small.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   text-align: center;
 }
 
@@ -90,6 +117,93 @@ nav .active {
   position: absolute;
   bottom: 20px;
   font-size: 30px;
+  color: #ffffff;
+  -webkit-animation: heartBeat 1.5s infinite;
+          animation: heartBeat 1.5s infinite;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.hero-section .hero-img .fa-sort-down:hover {
+  color: #039dff;
+}
+
+.about-section .aboutus-hover h3 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.about-section .aboutus-hover p {
+  font-size: 14px;
+}
+
+.about-section .aboutus-hover i {
+  font-size: 30px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.aboutus-hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  visibility: hidden;
+}
+
+.aboutus-hover.animate__animated {
+  visibility: visible;
+}
+
+.aboutus-hover:hover {
+  color: #039dff;
+}
+
+.aboutus-hover:hover i {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.aboutus-img {
+  overflow: hidden;
+}
+
+.aboutus-img .jumbotron {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000b9), to(#000000d8)), url("../img/aboutus-img.jpg");
+  background-image: linear-gradient(#000000b9, #000000d8), url("../img/aboutus-img.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  padding: 60px 0;
+  color: #f4f4f4;
+}
+
+.aboutus-img .jumbotron h2 {
+  font-size: 32px;
+}
+
+.aboutus-img .jumbotron .aboutus-img-box {
+  margin: 10px 0;
+  visibility: hidden;
+}
+
+.aboutus-img .jumbotron .aboutus-img-box.animate__animated {
+  visibility: visible;
+}
+
+.aboutus-img .jumbotron h3 {
+  font-size: 26px;
+}
+
+.aboutus-img .jumbotron p {
+  font-size: 14px;
+}
+
+.aboutus-img .jumbotron i {
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 375px) {
@@ -98,6 +212,28 @@ nav .active {
   }
   .hero-section .hero-img p {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 414px) {
+  .aboutus-img .jumbotron {
+    padding: 80px 0;
+  }
+  .aboutus-img .jumbotron h2 {
+    font-size: 36px;
+  }
+  .aboutus-img .jumbotron .aboutus-img-box {
+    margin: 15px 0;
+  }
+  .aboutus-img .jumbotron h3 {
+    font-size: 32px;
+  }
+  .aboutus-img .jumbotron p {
+    font-size: 18px;
+  }
+  .aboutus-img .jumbotron i {
+    font-size: 30px;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
