@@ -1,4 +1,14 @@
 .hero-section .hero-img .fa-sort-down {
   display: block;
 }
+
+.wrapper-prices {
+  width: 95%;
+}
+
+@media (min-width: 2000px) {
+  .wrapper-prices {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=large.css.map */

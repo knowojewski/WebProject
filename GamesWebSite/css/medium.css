@@ -5,4 +5,27 @@
 .hero-section .hero-img p {
   font-size: 16px;
 }
+
+.card-deck {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-deck .card {
+  margin-right: 15px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+
+.prices .price-info {
+  font-size: 23px;
+}
+
+.wrapper-prices {
+  width: 90%;
+}
 /*# sourceMappingURL=medium.css.map */

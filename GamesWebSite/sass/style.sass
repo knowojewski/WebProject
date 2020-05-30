@@ -40,6 +40,7 @@ nav
 
 // REUSABLE COMPONENTS
 .wrapper 
+    max-width: 2560px
     width: 80%
     text-align: center
     margin: 0 auto
@@ -162,6 +163,159 @@ nav
         i 
             font-size: 30px
             margin-bottom: 15px
+
+
+// PORTFOLIO SECTION
+
+.portfolio-section
+
+    .carousel-indicators
+        padding-bottom: 20px  
+
+    .carousel-item
+        position: relative
+        height: 600px
+
+        img 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+        .carousel-caption
+            right: 0
+            left: 0
+            background-color: rgba(0, 0, 0, 0.801)
+            padding: 40px 0
+
+.wrapper-card
+    margin: 0 30px
+
+
+// PRICES SECTION
+
+.prices
+    overflow: hidden
+    
+    .jumbotron
+        background-color: #f4f4f4
+    span 
+        font-weight: bold
+
+    .price-info
+        margin-top: 20px
+
+.wrapper-prices
+    max-width: 2560px
+    width: 95%
+    margin: 0 auto
+
+.prices-box
+    background-color: #fff
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6)
+    margin: 0 10px 25px 10px
+    padding: 30px
+    transition: transform 0.3s
+    visibility: hidden
+
+    h3
+        color: $blue-color
+
+    i 
+        font-size: 23px
+        padding: 0 5px
+
+    .price
+        font-size: 30px
+        font-weight: bold
+    
+    button
+        transition: transform 0.3s
+
+    button:hover
+        transform: scale(1.2)
+
+.prices-box.animate__animated
+    visibility: visible
+
+.transition-div
+    transition: all 0.3s
+
+.transition-div:hover
+    transform: scale(1.05)
+
+// TEAM SECTION
+
+#team
+    .jumbotron
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/team/team-img.jpg')
+        background-position: center
+        background-attachment: fixed
+        background-size: cover
+
+        h2 
+            color: #fff
+
+        .card-deck
+
+            .card
+                transition: transform 0.3s
+
+                img 
+                    height: 300px
+                    object-fit: cover
+
+                h5
+                    text-align: center
+                    font-weight: bold
+
+                .card-body
+                    height: 150px
+
+            .card:hover
+                transform: scale(0.95)
+
+            .row
+                margin-left: 0
+                margin-right: 0
+
+// ACHIVEMENTS SECTION
+
+
+
+.achiv-box 
+    visibility: hidden
+
+    i 
+        font-size: 40px
+        color: #ffffff
+        text-shadow: 0 0 5px #000
+        margin-bottom: 5px
+        transition: text-shadow 0.3s, transform 0.3s
+    
+    h5 
+
+    
+    p 
+        font-size: 14px
+        margin-top: 10px
+        margin-bottom: 30px
+
+.achiv-box:hover
+    i 
+        text-shadow: 0 0 15px $blue-color
+        transform: scale(1.2)
+
+
+.achiv-box.animate__animated
+    visibility: visible
+
+
+
+
+
+
+
 
 
 

@@ -47,6 +47,7 @@ nav .active {
 }
 
 .wrapper {
+  max-width: 2560px;
   width: 80%;
   text-align: center;
   margin: 0 auto;
@@ -204,6 +205,184 @@ nav .active {
 .aboutus-img .jumbotron i {
   font-size: 30px;
   margin-bottom: 15px;
+}
+
+.portfolio-section .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+.portfolio-section .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+.portfolio-section .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.portfolio-section .carousel-item .carousel-caption {
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.801);
+  padding: 40px 0;
+}
+
+.wrapper-card {
+  margin: 0 30px;
+}
+
+.prices {
+  overflow: hidden;
+}
+
+.prices .jumbotron {
+  background-color: #f4f4f4;
+}
+
+.prices span {
+  font-weight: bold;
+}
+
+.prices .price-info {
+  margin-top: 20px;
+}
+
+.wrapper-prices {
+  max-width: 2560px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.prices-box {
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  margin: 0 10px 25px 10px;
+  padding: 30px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  visibility: hidden;
+}
+
+.prices-box h3 {
+  color: #039dff;
+}
+
+.prices-box i {
+  font-size: 23px;
+  padding: 0 5px;
+}
+
+.prices-box .price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.prices-box button {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.prices-box button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.prices-box.animate__animated {
+  visibility: visible;
+}
+
+.transition-div {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.transition-div:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#team .jumbotron {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/team/team-img.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/team/team-img.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#team .jumbotron h2 {
+  color: #fff;
+}
+
+#team .jumbotron .card-deck .card {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#team .jumbotron .card-deck .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#team .jumbotron .card-deck .card h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#team .jumbotron .card-deck .card .card-body {
+  height: 150px;
+}
+
+#team .jumbotron .card-deck .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#team .jumbotron .card-deck .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.achiv-box {
+  visibility: hidden;
+}
+
+.achiv-box i {
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #000;
+  margin-bottom: 5px;
+  -webkit-transition: text-shadow 0.3s, -webkit-transform 0.3s;
+  transition: text-shadow 0.3s, -webkit-transform 0.3s;
+  transition: text-shadow 0.3s, transform 0.3s;
+  transition: text-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.achiv-box p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.achiv-box:hover i {
+  text-shadow: 0 0 15px #039dff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.achiv-box.animate__animated {
+  visibility: visible;
 }
 
 @media (min-width: 375px) {
