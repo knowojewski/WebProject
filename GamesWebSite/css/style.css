@@ -385,6 +385,28 @@ nav .active {
   visibility: visible;
 }
 
+#contact {
+  color: #ffffff;
+}
+
+#contact .jumbotron {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.801)), to(rgba(0, 0, 0, 0.801))), url("../img/contact-img.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)), url("../img/contact-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#contact .jumbotron .row {
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#contact .jumbotron .row .contact-box {
+  text-align: center;
+}
+
 @media (min-width: 375px) {
   .hero-section .hero-img h1 {
     font-size: 36px;

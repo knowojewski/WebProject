@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let aboutUsImgBoxes = document.getElementsByClassName("aboutus-img-box");
 
-    for(let i = 0; i < aboutUsImgBoxes.length; i++) {
-        animate(aboutUsImgBoxes[i], 'animate__bounceInUp', '70%');
+    for(let j = 0; j < aboutUsImgBoxes.length; j++) {
+        animate(aboutUsImgBoxes[j], 'animate__bounceInUp', '70%');
     }
 
 
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let priceBoxes = document.getElementsByClassName("prices-box");
 
-    for(let i = 0; i < priceBoxes.length; i++) {
-        animate(priceBoxes[i], 'animate__bounceInUp', '50%');
+    for(let k = 0; k < priceBoxes.length; k++) {
+        animate(priceBoxes[k], 'animate__bounceInUp', '50%');
     }
 
 
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let achivBoxes = document.getElementsByClassName("achiv-box");
 
-    for(let i = 0; i < achivBoxes.length; i++) {
-        animate(achivBoxes[i], 'animate__bounceIn', '70%');
+    for(let l = 0; l < achivBoxes.length; l++) {
+        animate(achivBoxes[l], 'animate__bounceIn', '70%');
     }
 
 
