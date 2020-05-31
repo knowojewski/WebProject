@@ -390,14 +390,17 @@ nav .active {
 }
 
 #contact .jumbotron {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.801)), to(rgba(0, 0, 0, 0.801))), url("../img/contact-img.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)), url("../img/contact-img.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 0, 255, 0.233)), to(rgba(0, 0, 0, 0.801))), url("../img/contact-img.jpg");
+  background-image: linear-gradient(rgba(25, 0, 255, 0.233), rgba(0, 0, 0, 0.801)), url("../img/contact-img.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 #contact .jumbotron .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   margin-right: 0;
   margin-left: 0;
@@ -405,6 +408,41 @@ nav .active {
 
 #contact .jumbotron .row .contact-box {
   text-align: center;
+  margin-bottom: 40px;
+  visibility: hidden;
+}
+
+#contact .jumbotron .row .contact-box h3 {
+  font-size: 26px;
+}
+
+#contact .jumbotron .row .contact-box .links a {
+  color: #ffffff;
+  margin: 0 15px;
+}
+
+#contact .jumbotron .row .contact-box .links a i {
+  font-size: 20px;
+  color: #ffffff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#contact .jumbotron .row .contact-box .links a i:hover {
+  color: #039dff;
+}
+
+#contact .jumbotron .row .contact-box.animate__animated {
+  visibility: visible;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+}
+
+footer p {
+  margin-top: 18px;
 }
 
 @media (min-width: 375px) {

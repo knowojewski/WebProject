@@ -60,6 +60,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
+    // CONTACT SECTION ANIMATION
+
+    let contactBoxes = document.getElementsByClassName("contact-box");
+
+    for(let m = 0; m < contactBoxes.length; m++) {
+        animate(contactBoxes[m], 'animate__fadeIn', '70%');
+    }
+
+
     // SLICK.JS
 
     $(document).ready(function(){
