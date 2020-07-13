@@ -13,7 +13,11 @@ const travelImages = document.querySelectorAll('.traveling .images-container img
 const modalTravelGallery = document.querySelector('.traveling .modal-gallery');
 const links = [...menuLinks, logo];
 const travelImgsCopy = [...travelImages];
-console.log(travelImages, travelImgsCopy)
+const natureModal = document.querySelector('.nature-modal');
+const naturePreview = document.querySelectorAll('.grid-container img');
+const natureFull = document.querySelector('.nature-modal .full-img');
+const natureDesc = document.querySelector('.nature-modal p');
+
 
 // ------ EVENTS
 hamburger.addEventListener('click', showMenu);
@@ -21,6 +25,8 @@ window.addEventListener('scroll', smallerNavigation);
 links.forEach(link => { link.addEventListener('click', closeMenuAfterLinkClick) });
 travelImgsCopy.map(image => { image.addEventListener('click', openTravelingModalGallery) });
 modalTravelGallery.addEventListener('click', closeModal);
+naturePreview.forEach(image => { image.addEventListener('click', openNatureModal); });
+natureModal.addEventListener('click', closeModal);
 
 
 // ------ FUNCTIONS
@@ -94,7 +100,19 @@ function openTravelingModalGallery(event) {
 }
 
 function closeModal(event) {
-    if(event.target == modalTravelGallery) {
+    if(event.target == modalTravelGallery ) {
         modalTravelGallery.classList.remove('show');
+    } else if(event.target == natureModal) {
+        natureModal.classList.remove('show');
     }
+}
+
+function openNatureModal(e) {
+    natureModal.classList.add('show');
+    const fullPath = e.target.getAttribute('data-full');
+    const description = e.target.getAttribute('alt');
+
+    natureFull.src = `./images/nature/full/${fullPath}`;
+    natureFull.alt = description;
+    natureDesc.innerText = description;
 }
