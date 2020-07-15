@@ -60,11 +60,14 @@ h3
         font-size: 20px
         line-height: 130%
         margin-bottom: 50px
+        opacity: 0
 
 .bg-text 
         position: absolute
         top: 50px
         z-index: 0
+        width: 100%
+        overflow: hidden
 
 
 // --------- NAVIGATION
@@ -285,6 +288,7 @@ nav
         align-items: center
         border-radius: 3px
         box-shadow: 0px 0px 20px #0f0f0f
+        opacity: 0
         transition: height .5s
 
     h3 
@@ -366,6 +370,7 @@ nav
                     overflow: hidden
                     position: relative
                     cursor: pointer
+                    opacity: 0
 
                     .shadow
                         position: absolute
@@ -495,6 +500,7 @@ nav
             width: 100%
             overflow: hidden
             cursor: pointer
+            opacity: 0
 
         .grid-item img 
             height: 100% 
@@ -599,6 +605,7 @@ nav
                 background-color: #333333
                 overflow: hidden
                 cursor: pointer
+                opacity: 0
 
                 img 
                     width: 100%
@@ -745,5 +752,30 @@ nav
         opacity: 0
         
     100%
+        opacity: 1
+        
+.fadeInRight
+    animation: fadeInRight .8s ease-in forwards
+
+@keyframes fadeInRight
+    0%
+        transform: translateX(60px)
+        opacity: 0
+
+    100%
+        transform: translateX(0)
+        opacity: 1
+        
+
+.fadeInLeft
+    animation: fadeInLeft .8s ease-in forwards
+
+@keyframes fadeInLeft
+    0%
+        transform: translateX(-60px)
+        opacity: 0
+        
+    100%
+        transform: translateX(0)
         opacity: 1
         
