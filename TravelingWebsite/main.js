@@ -17,6 +17,14 @@ const natureModal = document.querySelector('.nature-modal');
 const naturePreview = document.querySelectorAll('.grid-container img');
 const natureFull = document.querySelector('.nature-modal .full-img');
 const natureDesc = document.querySelector('.nature-modal p');
+const culturesImages = document.querySelectorAll('.cultures-gallery img');
+const culturesModal = document.querySelector('.cultures-modal');
+const culturesModalImages = document.querySelectorAll('.cultures-modal .slide img');
+const culturesSlideBox = document.querySelector('.slides-box');
+const culturesPreviewImages = document.querySelectorAll('.cultures-modal .preview-box img');
+const nextSlide = document.querySelector('.next-slide');
+const previousSlide = document.querySelector('.previous-slide');
+const caption = document.querySelector('.caption');
 
 
 // ------ EVENTS
@@ -27,6 +35,11 @@ travelImgsCopy.map(image => { image.addEventListener('click', openTravelingModal
 modalTravelGallery.addEventListener('click', closeModal);
 naturePreview.forEach(image => { image.addEventListener('click', openNatureModal); });
 natureModal.addEventListener('click', closeModal);
+culturesImages.forEach(image => { image.addEventListener('click', openCulturesGallery) });
+window.addEventListener('click', closeModal);
+culturesPreviewImages.forEach( image => { image.addEventListener('click', openCulturesGallery); });
+nextSlide.addEventListener('click', () => { culturesChangeSlide(1) });
+previousSlide.addEventListener('click', () => { culturesChangeSlide(-1) });
 
 
 // ------ FUNCTIONS
@@ -104,6 +117,8 @@ function closeModal(event) {
         modalTravelGallery.classList.remove('show');
     } else if(event.target == natureModal) {
         natureModal.classList.remove('show');
+    } else if(event.target == culturesModal || event.target == culturesSlideBox) {
+        culturesModal.classList.remove('show');
     }
 }
 
@@ -115,4 +130,31 @@ function openNatureModal(e) {
     natureFull.src = `./images/nature/full/${fullPath}`;
     natureFull.alt = description;
     natureDesc.innerText = description;
+}
+
+let index = 0;
+
+function openCulturesGallery(event) {
+    const image = event.target;
+    index = parseInt(image.dataset.index);
+    culturesModal.classList.add('show');
+    showSlide(index);
+}
+
+function culturesChangeSlide(num) {
+    index = index + num;
+    showSlide(index);
+}
+
+function showSlide(i) {
+    culturesModalImages.forEach( image => { image.parentElement.style.display = "none" });
+    culturesPreviewImages.forEach( image => { image.classList.remove('active'); })
+    if(i > 5) { 
+        index = 1; 
+    } else if(i < 1) {
+        index = 5;
+    }
+    culturesModalImages[index - 1].parentElement.style.display = 'block';
+    caption.innerText = culturesModalImages[index - 1].alt;
+    culturesPreviewImages[index - 1].classList.add('active');
 }
