@@ -12,6 +12,9 @@ const travelingImage = document.querySelectorAll('.traveling .image-box');
 const natureImages = document.querySelectorAll('.nature .grid-item');
 const culturesImgs = document.querySelectorAll('.cultures-gallery .gallery-image');
 const bgText = document.querySelectorAll('.bg-text');
+const joinusH3 = document.querySelectorAll('.joinus h3');
+const joinusIcons = document.querySelectorAll('.joinus-box div a');
+const joinusForm = document.querySelector('.joinus form');
 
 
 // --------- EVENT LISTENERS & FUNCTION CALLINGS
@@ -41,12 +44,20 @@ window.document.addEventListener('scroll', function() {
         waypoint(item, 0.7, 'fadeInLeft', Math.floor(Math.random()*1000));
     });
 
+    joinusH3.forEach( item => {
+        waypoint(item, 0.8, 'fadeIn', 000);
+    });
+
     waypoint(aboutBox[0], 0.7, 'fadeInRight', 0);
     waypoint(aboutBox[1], 0.7, 'fadeInLeft', 0);
     waypoint(aboutBox[2], 0.7, 'fadeInRight', 0);
     waypoint(travelingImage[0], 0.5, 'fadeInRight', 0);
     waypoint(travelingImage[1], 0.5, 'fadeInRight', 200);
     waypoint(travelingImage[2], 0.5, 'fadeInRight', 400);
+    waypoint(joinusIcons[0], 0.7, 'fadeInLeft', 0);
+    waypoint(joinusIcons[1], 0.7, 'fadeInLeft', 200);
+    waypoint(joinusIcons[2], 0.7, 'fadeInLeft', 400);
+    waypoint(joinusForm, 0.6, 'pulse', 0);
 });
 
 
