@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" media='screen and (max-width: 1200px)' href="./css/large.css">
     <link rel="stylesheet" media='screen and (max-width: 992px)' href="./css/medium.css">
@@ -253,21 +254,57 @@
         <h2>Join our group</h2>
         <div class="row">
             <div class="joinus-wrapper">
-                <div class="socials-box">
+                <div class="joinus-box socials-box">
                     <h3>Meet us on socials</h3>
+                    <div>
+                        <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram-square"></i></a>
+                    </div>
                 </div>
-                <div class="contact-box">
+                <div class="joinus-box contact-box">
                     <h3>Send us a message</h3>
-                    <form action="" class="contact-form">
-                        <input type="text" placeholder="E-mail">
-                        <input type="text" placeholder="Title">
+                    <form class="contact-form">
+                        <input class="text-input" type="text" placeholder="E-mail">
+                        <input class="text-input" type="text" placeholder="Title">
                         <textarea cols="30" rows="10" placeholder="Message"></textarea>
-                        <input type="submit" value="Send">
+                        <input class="btn" type="submit" value="Send">
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="row">
+            <div class="footer-wrapper">
+                <a href="#home" class="nav-logo"><svg width="193" height="72" viewBox="0 0 193 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M72.5 39.5L64 23.5L67 16.5L75.5 32.5L72.5 39.5Z" fill="#6F6F6F"/>
+                    <path d="M166.5 39L159 24.5L162 17.5L169.5 31.5L166.5 39Z" fill="#6F6F6F"/>
+                    <path d="M57 40L65.5 20L62.5 13L51 40H57Z" fill="#C4C4C4"/>
+                    <path d="M152 41L160.5 21L157.5 14L146 41H152Z" fill="#C4C4C4"/>
+                    <path d="M9 37L17.5 17L14.5 10L3 37H9Z" fill="#C4C4C4"/>
+                    <path d="M105 36L113.5 16L110.5 9L99 36H105Z" fill="#6F6F6F"/>
+                    <path d="M30 38L41.5 11.5L38.5 4.5L27 31L30 38Z" fill="#6F6F6F"/>
+                    <path d="M126 37L137.5 10.5L134.5 3.5L123 30.5L126 37Z" fill="#6F6F6F"/>
+                    <path d="M166 41L174.5 21L171.5 14L160 41H166Z" fill="#C4C4C4"/>
+                    <path d="M13.572 58.104C12.96 58.572 12.132 58.824 11.304 58.824C9.792 58.824 8.892 57.924 8.892 56.268V48.384H13.716V44.064H8.892V39.348H3.276V44.064H0.288V48.384H3.276V56.34C3.276 60.948 5.94 63.288 10.512 63.288C12.24 63.288 13.932 62.892 15.084 62.064L13.572 58.104ZM23.6005 46.188V43.632H18.2365V63H23.8525V53.856C23.8525 50.148 25.9045 48.456 29.0005 48.456C29.4325 48.456 29.7925 48.492 30.2605 48.528V43.344C27.2725 43.344 24.9685 44.316 23.6005 46.188ZM41.3063 43.344C38.2103 43.344 35.0783 44.172 32.9543 45.684L34.9703 49.608C36.3743 48.492 38.4983 47.808 40.5503 47.808C43.5743 47.808 45.0143 49.212 45.0143 51.624H40.5503C34.6463 51.624 32.2343 54 32.2343 57.42C32.2343 60.768 34.9343 63.288 39.4703 63.288C42.3143 63.288 44.3303 62.352 45.3743 60.588V63H50.6303V51.948C50.6303 46.08 47.2103 43.344 41.3063 43.344ZM40.8743 59.508C38.8943 59.508 37.7063 58.572 37.7063 57.168C37.7063 55.872 38.5343 54.9 41.1623 54.9H45.0143V56.88C44.3663 58.644 42.7463 59.508 40.8743 59.508ZM95.0757 53.388C95.0757 47.16 90.6837 43.344 84.9957 43.344C79.0917 43.344 74.6637 47.52 74.6637 53.316C74.6637 59.076 79.0197 63.288 85.7157 63.288C89.2077 63.288 91.9077 62.208 93.7077 60.156L90.7197 56.916C89.3877 58.176 87.9117 58.788 85.8597 58.788C82.9077 58.788 80.8557 57.312 80.3157 54.9H94.9677C95.0037 54.432 95.0757 53.82 95.0757 53.388ZM85.0317 47.592C87.5517 47.592 89.3877 49.176 89.7837 51.624H80.2437C80.6397 49.14 82.4757 47.592 85.0317 47.592ZM99.2107 63H117.679V58.248H105.043V37.8H99.2107V63ZM129.617 63.288C135.773 63.288 140.237 59.148 140.237 53.316C140.237 47.484 135.773 43.344 129.617 43.344C123.461 43.344 118.961 47.484 118.961 53.316C118.961 59.148 123.461 63.288 129.617 63.288ZM129.617 58.68C126.809 58.68 124.649 56.664 124.649 53.316C124.649 49.968 126.809 47.952 129.617 47.952C132.425 47.952 134.549 49.968 134.549 53.316C134.549 56.664 132.425 58.68 129.617 58.68ZM183.353 53.388C183.353 47.16 178.961 43.344 173.273 43.344C167.369 43.344 162.941 47.52 162.941 53.316C162.941 59.076 167.297 63.288 173.993 63.288C177.485 63.288 180.185 62.208 181.985 60.156L178.997 56.916C177.665 58.176 176.189 58.788 174.137 58.788C171.185 58.788 169.133 57.312 168.593 54.9H183.245C183.281 54.432 183.353 53.82 183.353 53.388ZM173.309 47.592C175.829 47.592 177.665 49.176 178.061 51.624H168.521C168.917 49.14 170.753 47.592 173.309 47.592Z" fill="white"/>
+                    <path d="M52 43L60.5 63H66.5L75 43H69L63.5 56.5L58 43H52Z" fill="#5CA6D1"/>
+                    <path d="M140 43L148.5 63H154.5L163 43H157L151.5 56.5L146 43H140Z" fill="#5CA6D1"/>
+                    <path d="M24.5 39L16 19L19 12L30.5 39H24.5Z" fill="#C4C4C4"/>
+                    <path d="M120.5 38L112 19.5L115 12.5L126.5 38H120.5Z" fill="#C4C4C4"/>
+                    <path d="M52 37.5L40 8L43 1L55.5 29.5L52 37.5Z" fill="#464646"/>
+                    <path d="M148 36.5L136 7L139 0L151.5 28L148 36.5Z" fill="#464646"/>
+                    <path d="M99 36L89 12L92 5L105 36H99Z" fill="#C4C4C4"/>
+                    <path d="M71 41L88.5 0L91.5 7L77 41H71Z" fill="#C4C4C4"/>
+                    <path d="M192.5 51L175 10L172 17L186.5 51H192.5Z" fill="#C4C4C4"/>
+                    </svg>            
+                    </a>
+                    <p class="footer-text">Traveling is everything.</p>
+            </div>
+            <p class="copyrights">2020 travelove &copy;</p>
+        </div>
+    </footer>
     
 
     <script src="./rellax.min.js"></script>
