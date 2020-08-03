@@ -1,4 +1,57 @@
-.btn {
-  background-color: red;
+.hero-section .heading-box h1 {
+  font-size: 35px;
+}
+
+.hero-section .heading-box p {
+  font-size: 18px;
+  width: 80%;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .about-box-container {
+  width: 100%;
+  height: 380px;
+  position: relative;
+}
+
+.container .about-box-container .about-box {
+  width: 100%;
+  height: 110px;
+}
+
+.container .about-box-container .about-box:hover {
+  height: 200px;
+}
+
+.row {
+  width: 100%;
+  padding: 40px;
+}
+
+@media (max-width: 1100px) {
+  .section-text {
+    font-size: 16px;
+  }
+  .nature .grid-container {
+    height: 450px;
+  }
 }
 /*# sourceMappingURL=large.css.map */
