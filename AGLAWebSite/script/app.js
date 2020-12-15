@@ -5,6 +5,12 @@ let contact = document.querySelector('.contact-row');
 let nav = document.querySelector('.navigation');
 let menuIcon = document.querySelector('.nav-hamburger');
 let navList = document.querySelector('.nav-list');
+const modal = document.querySelector('.modal');
+const galleryPreview = document.querySelectorAll('.grid-container img');
+const galleryFull = document.querySelector('.modal .full-img');
+
+galleryPreview.forEach(image => { image.addEventListener('click', openModal); });
+modal.addEventListener('click', closeModal);
 
 
 // ANIMATIONS
@@ -83,4 +89,19 @@ function displayMenu() {
     }
 
     
+}
+
+// MODAL GALLERY
+
+function closeModal(event) {
+    if(event.target == modal) {
+        modal.classList.remove('show');
+    }
+}
+
+function openModal(e) {
+    modal.classList.add('show');
+    const fullPath = e.target.getAttribute('data-full');
+
+    galleryFull.src = `./images/large/${fullPath}`;
 }
