@@ -19,6 +19,18 @@
 
     .services-img { margin-top: 50px; }
 
+    .gallery .grid-container { height: 600px; }
+
+    .modal img { 
+        height: 70%; 
+        max-width: 85%;
+    }
+
+    .modal .landscape {
+        height: auto;
+        width: 90%;
+    }
+
     .nav-hamburger,
     .nav-hamburger:link,
     .nav-hamburger:visited { 
@@ -72,6 +84,8 @@
     .about-content { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
     .box { width: 100%; }
+
+    .gallery .grid-container { height: 450px; }
 
     .services { 
         -webkit-box-orient: vertical; 
@@ -202,3 +216,10 @@
 
     .copyrights { margin: 15px 0 0 0;}
 }
+
+@media only screen and (max-width: 576px) {
+    .gallery .grid-container {
+
+    }
+}
+

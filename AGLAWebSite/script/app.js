@@ -8,9 +8,11 @@ let navList = document.querySelector('.nav-list');
 const modal = document.querySelector('.modal');
 const galleryPreview = document.querySelectorAll('.grid-container img');
 const galleryFull = document.querySelector('.modal .full-img');
+const galleryBtn = document.querySelector('.close-icon');
 
 galleryPreview.forEach(image => { image.addEventListener('click', openModal); });
 modal.addEventListener('click', closeModal);
+galleryBtn.addEventListener('click', closeModal);
 
 
 // ANIMATIONS
@@ -94,7 +96,7 @@ function displayMenu() {
 // MODAL GALLERY
 
 function closeModal(event) {
-    if(event.target == modal) {
+    if(event.target !== galleryFull) {
         modal.classList.remove('show');
     }
 }
@@ -102,6 +104,14 @@ function closeModal(event) {
 function openModal(e) {
     modal.classList.add('show');
     const fullPath = e.target.getAttribute('data-full');
+
+    if(e.target.classList.contains('landscape')) {
+        galleryFull.classList.add('landscape');
+        console.log(galleryFull.classList)
+    } else {
+        galleryFull.classList.remove('landscape');
+        console.log(galleryFull.classList)
+    }
 
     galleryFull.src = `./images/large/${fullPath}`;
 }

@@ -427,10 +427,12 @@ header {
     transition: opacity .3s, visibility .3s;
 }
 
-.modal p {
-    font-size: 24px;
-    margin-top: 20px;
-    font-style: italic;
+.modal .close-icon {
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    top: 10px;
+    right: 10px;
 }
 
 .modal img {
