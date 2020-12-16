@@ -229,6 +229,14 @@
         text-align: center;
     }
 
+    header {
+        background-attachment: scroll;
+    }
+
+    .services-img {
+        background-attachment: scroll;
+    }
+
     .main-hero {
         text-align: center;
     }
