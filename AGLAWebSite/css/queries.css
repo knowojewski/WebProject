@@ -53,6 +53,9 @@
     .nav-list { display: none; }
 
     .nav-list.mobile {
+        position: absolute;
+        right: 0;
+        top: 70px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -198,6 +201,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .nav-list.mobile {
+        width: 100%;
+    }
+    
     .footer-navAndLogo { 
         -webkit-box-orient: horizontal; 
         -webkit-box-direction: normal; 
@@ -218,8 +225,42 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .gallery .grid-container {
+    .btns {
+        text-align: center;
+    }
 
+    .main-hero {
+        text-align: center;
+    }
+
+    .main-hero h1 {
+        font-size: 220%;
+    }
+
+    .main-hero h3 {
+        font-size: 130%;
+    }
+
+    .modal img { 
+        height: 60%; 
+        max-width: 85%;
+    }
+
+    .gallery .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .gallery .grid-container .grid-item {
+        height: auto;
+        width: 48%;
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .modal img { 
+        height: 60%; 
+        max-width: 85%;
+    }
+}
